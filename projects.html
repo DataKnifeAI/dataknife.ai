@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects · DataKnifeAI</title>
+    <meta
+      name="description"
+      content="Public original DataKnifeAI repositories on GitHub and GitLab: agents, MCP servers, platform, and apps."
+    />
+    <meta name="theme-color" content="#0a0b0c" />
+    <link rel="icon" href="assets/favicon-64.png" type="image/png" />
+    <link rel="canonical" href="https://dataknife.ai/projects.html" />
+    <meta property="og:title" content="DataKnifeAI projects" />
+    <meta property="og:description" content="Public original repositories from DataKnifeAI." />
+    <meta property="og:url" content="https://dataknife.ai/projects.html" />
+    <meta property="og:image" content="https://dataknife.ai/assets/og.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="brand" href="./">
+          <img src="assets/dataknifeai-logo-384.png" alt="" width="32" height="32" />
+          <span>DataKnife<em>AI</em></span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="./">Overview</a>
+          <a href="projects.html" aria-current="page">Projects</a>
+          <a href="https://github.com/DataKnifeAI">GitHub</a>
+          <a href="https://gitlab.com/dk-raas/dkai">GitLab</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="wrap">
+      <header class="page-head">
+        <h1>Projects</h1>
+        <p class="muted" id="summary">Loading the public index…</p>
+      </header>
+
+      <div class="repo-toolbar">
+        <label class="search">
+          <span class="sr">Find a repository</span>
+          <svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"/></svg>
+          <input id="query" type="search" placeholder="Find a repository…" autocomplete="off" />
+        </label>
+        <div class="tabs" id="filters" role="tablist" aria-label="Categories"></div>
+      </div>
+
+      <ul class="repo-list" id="catalog" aria-live="polite"></ul>
+
+      <noscript>
+        <p class="muted">
+          This list needs JavaScript. The same data is in <a href="projects.json">projects.json</a>,
+          or browse <a href="https://github.com/DataKnifeAI">github.com/DataKnifeAI</a>.
+        </p>
+      </noscript>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <p>
+          Public originals only. Forks and private repositories are not listed. GitLab links appear
+          when the mirror under <a href="https://gitlab.com/dk-raas/dkai">dk-raas/dkai</a> is public.
+        </p>
+        <p class="muted" id="generated"></p>
+      </div>
+    </footer>
+
+    <script src="shared.js"></script>
+    <script src="catalog.js"></script>
+  </body>
+</html>

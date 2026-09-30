@@ -3,74 +3,247 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DataKnife — projects</title>
+    <title>DataKnifeAI — AI tools that stay maintainable</title>
     <meta
       name="description"
-      content="Public original repositories from DataKnifeAI on GitHub and GitLab."
+      content="DataKnifeAI learns and solves problems with AI tools—built to stay maintainable through automation, and aligned with software freedom."
     />
-    <meta name="theme-color" content="#f3efe6" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#0a0b0c" />
+    <link rel="icon" href="assets/favicon-64.png" type="image/png" />
     <link rel="canonical" href="https://dataknife.ai/" />
-    <meta property="og:title" content="DataKnife" />
+    <meta property="og:title" content="DataKnifeAI" />
     <meta
       property="og:description"
-      content="Learn and solve problems with AI tools. Public original repositories from GitHub and GitLab."
+      content="Learn and solve problems with AI tools—built to stay maintainable through automation, and aligned with software freedom."
     />
     <meta property="og:url" content="https://dataknife.ai/" />
+    <meta property="og:image" content="https://dataknife.ai/assets/og.jpg" />
     <meta property="og:type" content="website" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,550;1,6..72,450&family=Outfit:wght@380;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip" href="#catalog">Skip to projects</a>
-    <header class="top">
-      <a class="mark" href="#top">DataKnife</a>
-      <nav class="top-nav" aria-label="Organization">
-        <a href="https://github.com/DataKnifeAI">GitHub</a>
-        <a href="https://gitlab.com/dk-raas/dkai">GitLab</a>
-      </nav>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="brand" href="./">
+          <img src="assets/dataknifeai-logo-384.png" alt="" width="32" height="32" />
+          <span>DataKnife<em>AI</em></span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="./" aria-current="page">Overview</a>
+          <a href="projects.html">Projects</a>
+          <a href="https://github.com/DataKnifeAI">GitHub</a>
+          <a href="https://gitlab.com/dk-raas/dkai">GitLab</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="top">
+    <main id="main">
       <section class="hero">
-        <p class="kicker">dataknife.ai</p>
-        <h1>Learn and solve problems with AI tools.</h1>
-        <p class="lede">
-          Built to stay maintainable through automation, and aligned with
-          software freedom.
-        </p>
-        <p class="note" id="summary">Loading the public index…</p>
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">DataKnifeAI · dataknife.ai</p>
+            <h1>Learn and solve problems with AI tools.</h1>
+            <p class="lede">
+              Built to stay maintainable through automation, and aligned with software freedom.
+              We put AI to work in ways people can operate and evolve over time: automation
+              carries the repeatable pieces, and boring reliability beats fragile cleverness.
+            </p>
+            <div class="actions">
+              <a class="btn btn-primary" href="projects.html">Browse projects</a>
+              <a class="btn" href="https://github.com/DataKnifeAI">
+                <svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+                DataKnifeAI on GitHub
+              </a>
+            </div>
+          </div>
+          <figure class="hero-mark">
+            <img src="assets/dataknifeai-logo-384.png" alt="DataKnifeAI logo: a circuit-edged data knife inside an olive hexagon" width="384" height="384" />
+          </figure>
+        </div>
       </section>
 
-      <div class="toolbar">
-        <div class="filters" id="filters" role="tablist" aria-label="Project categories"></div>
-        <label class="search">
-          <span class="sr">Search projects</span>
-          <input id="query" type="search" placeholder="Search" autocomplete="off" />
-        </label>
-      </div>
+      <section class="wrap north-star" aria-labelledby="north-star-title">
+        <div class="callout">
+          <h2 id="north-star-title">North star</h2>
+          <p>
+            A fully autonomous agent pipeline that can hand off work to run in the background,
+            using API LLMs and local LLMs, so people set direction while agents execute, monitor,
+            and iterate without constant babysitting.
+          </p>
+        </div>
+      </section>
 
-      <section id="catalog" aria-live="polite"></section>
+      <section class="wrap section" aria-labelledby="featured-title">
+        <header class="section-head">
+          <h2 id="featured-title">Featured work</h2>
+          <p>Where the north star is already showing up in code.</p>
+        </header>
+
+        <article class="feature feature-lead">
+          <div class="feature-media">
+            <img src="assets/nauarchos.jpg" alt="Nauarchos concept art: an admiral directing a fleet of agent vessels" width="1200" height="800" loading="lazy" />
+          </div>
+          <div class="feature-body">
+            <p class="feature-kicker">Agent pipeline</p>
+            <h3>Issues in, agents out</h3>
+            <p>
+              An issue opened on GitHub or GitLab is triaged by a small model, escalated when
+              confidence is low, and, if it is real work, handed to a coding agent inside a fresh
+              Coder workspace. The result comes back as a comment on the issue.
+            </p>
+            <ol class="pipeline" aria-label="Pipeline stages">
+              <li><span>Webhook</span>GitHub / GitLab issue</li>
+              <li><span>Triage</span>gpt-5-nano, escalate below 0.7</li>
+              <li><span>Berth</span>Fresh Coder workspace</li>
+              <li><span>Dispatch</span>Cursor CLI coding agent</li>
+              <li><span>Report</span>Comment and label</li>
+            </ol>
+            <ul class="repo-trio">
+              <li>
+                <a href="https://github.com/DataKnifeAI/slashbay">slashbay</a>
+                <span class="status status-active">Active</span>
+                <p>Intake, triage, berth, and dispatch.</p>
+              </li>
+              <li>
+                <a href="https://github.com/DataKnifeAI/dioptra">dioptra</a>
+                <p>Observe-only fleet status board.</p>
+              </li>
+              <li>
+                <a href="https://github.com/DataKnifeAI/nauarchos">nauarchos</a>
+                <span class="status status-design">Design</span>
+                <p>Rust control plane for agent fleets on Kubernetes.</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="feature-pair">
+          <article class="feature">
+            <div class="feature-body">
+              <p class="feature-kicker">Kubernetes operator · Go</p>
+              <h3>
+                <a href="https://github.com/DataKnifeAI/palworld-operator">palworld-operator</a>
+                <span class="status status-beta">Beta</span>
+              </h3>
+              <p>
+                One custom resource becomes a running Palworld dedicated server: Deployment, saves,
+                services, and Envoy Gateway exposure, using the official Pocketpair image.
+              </p>
+              <pre class="code" aria-label="Example PalworldServer resource"><code><span class="k">apiVersion</span>: palworld.dataknife.ai/v1alpha1
+<span class="k">kind</span>: PalworldServer
+<span class="k">metadata</span>:
+  <span class="k">name</span>: world-keeper
+<span class="k">spec</span>:
+  <span class="k">generateSecrets</span>: <span class="v">true</span>
+  <span class="k">gateway</span>:
+    <span class="k">address</span>: <span class="s">192.0.2.40</span></code></pre>
+              <p class="feature-links">
+                <a href="https://dataknifeai.github.io/palworld-operator/">Project site</a>
+                <a href="https://github.com/DataKnifeAI/palworld-operator">Source</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature-body">
+              <p class="feature-kicker">API · MCP · UI</p>
+              <h3>
+                <a href="https://hc.dataknife.ai/">High Command</a>
+                <span class="status status-live">Live</span>
+              </h3>
+              <p>
+                Real-time Helldivers 2 war data behind a FastAPI scraper, exposed to agents through
+                an MCP server, and queried in plain language from a chat UI.
+              </p>
+              <div class="terminal" aria-label="Example High Command prompt">
+                <p><span class="prompt">&gt;</span> War Status</p>
+                <p class="dim">high-command-ui → high-command-mcp → high-command-api</p>
+                <p class="dim">active campaigns, liberation progress, global statistics</p>
+                <p class="gap"><span class="prompt">&gt;</span> List Planets</p>
+                <p><span class="prompt">&gt;</span> Show Factions</p>
+                <p><span class="prompt">&gt;</span> Get Biomes<span class="cursor" aria-hidden="true"></span></p>
+              </div>
+              <p class="feature-links">
+                <a href="https://hc.dataknife.ai/">Open hc.dataknife.ai</a>
+                <a href="https://github.com/DataKnifeAI/high-command-api">API</a>
+                <a href="https://github.com/DataKnifeAI/high-command-mcp">MCP</a>
+                <a href="https://github.com/DataKnifeAI/high-command-ui">UI</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap section" aria-labelledby="layers-title">
+        <header class="section-head">
+          <h2 id="layers-title">What we're building toward</h2>
+          <p>Four layers that let agents do real work on real systems.</p>
+        </header>
+        <div class="layers">
+          <article>
+            <h3>Agent control plane</h3>
+            <p>Fleet orchestration, sandboxes, and on-demand workers on Kubernetes.</p>
+            <p class="layer-repos"><a href="https://github.com/DataKnifeAI/nauarchos">nauarchos</a> <a href="https://github.com/DataKnifeAI/slashbay">slashbay</a> <a href="https://github.com/DataKnifeAI/dioptra">dioptra</a></p>
+          </article>
+          <article>
+            <h3>Tooling surface</h3>
+            <p>MCP servers and skills so agents can act on real infrastructure and APIs.</p>
+            <p class="layer-repos"><a href="https://github.com/DataKnifeAI/proxmox-ve-mcp">proxmox-ve-mcp</a> <a href="https://github.com/DataKnifeAI/rancher-manager-mcp">rancher-manager-mcp</a> <a href="https://github.com/DataKnifeAI/agent-skills">agent-skills</a></p>
+          </article>
+          <article>
+            <h3>GitOps and infra</h3>
+            <p>Repeatable cluster and platform delivery that agents and humans can trust.</p>
+            <p class="layer-repos"><a href="https://github.com/DataKnifeAI/rancher-deploy">rancher-deploy</a> <a href="https://github.com/DataKnifeAI/gitops-core">gitops-core</a> <a href="https://github.com/DataKnifeAI/coder-templates">coder-templates</a></p>
+          </article>
+          <article>
+            <h3>Local and API models</h3>
+            <p>Self-hosted inference when you want agency, cloud APIs when you want reach.</p>
+            <p class="layer-repos"><a href="https://github.com/DataKnifeAI/enodios">enodios</a> <a href="https://github.com/DataKnifeAI/freya">freya</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap section" aria-labelledby="motion-title">
+        <header class="section-head section-head-row">
+          <div>
+            <h2 id="motion-title">In motion</h2>
+            <p>Most recently pushed public repositories.</p>
+          </div>
+          <a class="btn btn-small" href="projects.html">All projects</a>
+        </header>
+        <div class="repo-grid" id="recent" aria-live="polite">
+          <p class="muted">Loading recent activity…</p>
+        </div>
+      </section>
+
+      <section class="wrap section" aria-labelledby="principles-title">
+        <header class="section-head">
+          <h2 id="principles-title">Principles</h2>
+        </header>
+        <dl class="principles">
+          <div><dt>Maintainable</dt><dd>Clear structure people can operate and evolve over time.</dd></div>
+          <div><dt>Automated</dt><dd>Repeatable workflows over one-off heroics.</dd></div>
+          <div><dt>Stable</dt><dd>Boring reliability over fragile cleverness.</dd></div>
+          <div><dt>Freedom-respecting</dt><dd>Open and free software that preserves user agency, when it fits.</dd></div>
+        </dl>
+      </section>
     </main>
 
-    <footer class="colophon">
-      <p>DataKnifeAI · United States</p>
-      <p>Canonical repositories are on GitHub. GitLab holds public mirrors under dk-raas/dkai.</p>
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <p>
+          <strong>DataKnifeAI</strong> · Canonical source on
+          <a href="https://github.com/DataKnifeAI">GitHub</a>, public mirrors on
+          <a href="https://gitlab.com/dk-raas/dkai">GitLab</a>.
+        </p>
+        <p class="muted">The name nods to a tool for getting into systems, applied to AI development.</p>
+      </div>
     </footer>
 
-    <noscript>
-      <p class="noscript">
-        This index needs JavaScript to render. The same list is in
-        <a href="projects.json">projects.json</a>, or browse
-        <a href="https://github.com/DataKnifeAI">github.com/DataKnifeAI</a>.
-      </p>
-    </noscript>
-
-    <script src="catalog.js"></script>
+    <script src="shared.js"></script>
+    <script src="home.js"></script>
   </body>
 </html>

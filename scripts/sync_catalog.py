@@ -9,7 +9,11 @@ left off the index.
 from __future__ import annotations
 
 import json
+import os
+import shutil
 import subprocess
+import urllib.parse
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -18,7 +22,7 @@ OUT = ROOT / "projects.json"
 
 GITHUB_ORG = "DataKnifeAI"
 GITLAB_GROUP = "dk-raas/dkai"
-SKIP_NAMES = {".github", "gitlab-profile"}
+SKIP_NAMES = {".github", "gitlab-profile", "dataknife.ai"}
 
 CATEGORIES = {
     "nauarchos": "Agents",
@@ -27,9 +31,9 @@ CATEGORIES = {
     "dioptra": "Agents",
     "agent-skills": "Agents",
     "agent-workspace": "Agents",
-    "high-command-api": "High Command",
-    "high-command-ui": "High Command",
-    "high-command-mcp": "High Command",
+    "high-command-api": "Apps",
+    "high-command-ui": "Apps",
+    "high-command-mcp": "MCP",
     "unifi-network-mcp": "MCP",
     "unifi-protect-mcp": "MCP",
     "unifi-manager-mcp": "MCP",
@@ -42,89 +46,74 @@ CATEGORIES = {
     "gitops-dev": "Platform",
     "coder-templates": "Platform",
     "github-workflows": "Platform",
-    "freya": "Platform",
     "ck-scenarios": "Platform",
-    "windrose-operator": "Games",
-    "palworld-operator": "Games",
-    "timesplice": "Games",
+    "freya": "Apps",
+    "windrose-operator": "Apps",
+    "palworld-operator": "Apps",
+    "timesplice": "Apps",
 }
 
-CATEGORY_ORDER = ["Agents", "High Command", "MCP", "Platform", "Games"]
+CATEGORY_ORDER = ["Agents", "MCP", "Platform", "Apps"]
 
-PRIORITY = {
-    "Agents": [
-        "nauarchos",
-        "slashbay",
-        "enodios",
-        "dioptra",
-        "agent-skills",
-        "agent-workspace",
-    ],
-    "High Command": [
-        "high-command-api",
-        "high-command-ui",
-        "high-command-mcp",
-    ],
-    "MCP": [
-        "proxmox-ve-mcp",
-        "rancher-manager-mcp",
-        "unifi-manager-mcp",
-        "unifi-network-mcp",
-        "unifi-protect-mcp",
-        "gitops-mcp",
-    ],
-    "Platform": [
-        "rancher-deploy",
-        "gitops-core",
-        "gitops-tools",
-        "gitops-dev",
-        "coder-templates",
-        "freya",
-        "github-workflows",
-        "ck-scenarios",
-    ],
-    "Games": [
-        "palworld-operator",
-        "windrose-operator",
-        "timesplice",
-    ],
+STATUS = {
+    "nauarchos": "Design",
+    "slashbay": "Active",
+    "palworld-operator": "Beta",
+    "high-command-ui": "Live",
+}
+
+LIVE = {
+    "high-command-ui": "https://hc.dataknife.ai/",
 }
 
 
-def run_json(cmd: list[str]) -> object:
-    raw = subprocess.check_output(cmd, text=True)
-    return json.loads(raw)
+def github_token() -> str | None:
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if token:
+        return token
+    if shutil.which("gh"):
+        try:
+            return subprocess.check_output(["gh", "auth", "token"], text=True).strip() or None
+        except subprocess.CalledProcessError:
+            return None
+    return None
+
+
+def get_json(url: str, headers: dict[str, str] | None = None) -> object:
+    request = urllib.request.Request(url, headers={"User-Agent": "dataknife.ai-catalog", **(headers or {})})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return json.load(response)
 
 
 def github_repos() -> list[dict]:
-    data = run_json(
-        [
-            "gh",
-            "api",
-            f"orgs/{GITHUB_ORG}/repos?per_page=100&type=public",
-            "--paginate",
-        ]
-    )
-    if not isinstance(data, list):
-        raise SystemExit("unexpected GitHub response")
-    return data
+    headers = {"Accept": "application/vnd.github+json"}
+    token = github_token()
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    repos: list[dict] = []
+    page = 1
+    while True:
+        batch = get_json(
+            f"https://api.github.com/orgs/{GITHUB_ORG}/repos?type=public&per_page=100&page={page}",
+            headers,
+        )
+        if not isinstance(batch, list) or not batch:
+            break
+        repos.extend(batch)
+        if len(batch) < 100:
+            break
+        page += 1
+    return repos
 
 
 def gitlab_projects() -> list[dict]:
+    group = urllib.parse.quote(GITLAB_GROUP, safe="")
     projects: list[dict] = []
     page = 1
     while True:
-        batch = run_json(
-            [
-                "glab",
-                "api",
-                (
-                    "groups/dk-raas%2Fdkai/projects"
-                    f"?include_subgroups=true&per_page=100&page={page}"
-                ),
-                "--hostname",
-                "gitlab.com",
-            ]
+        batch = get_json(
+            f"https://gitlab.com/api/v4/groups/{group}/projects"
+            f"?include_subgroups=true&visibility=public&per_page=100&page={page}"
         )
         if not isinstance(batch, list) or not batch:
             break
@@ -141,22 +130,12 @@ def category_for(name: str) -> str:
     if name.endswith("-mcp"):
         return "MCP"
     if name.endswith("-operator"):
-        return "Games"
+        return "Apps"
     return "Platform"
 
 
 def day(value: str | None) -> str | None:
-    if not value:
-        return None
-    return value[:10]
-
-
-def sort_key(project: dict) -> tuple:
-    category = project["category"]
-    order = CATEGORY_ORDER.index(category) if category in CATEGORY_ORDER else len(CATEGORY_ORDER)
-    priority = PRIORITY.get(category, [])
-    rank = priority.index(project["name"]) if project["name"] in priority else len(priority)
-    return (order, rank, project["name"])
+    return value[:10] if value else None
 
 
 def main() -> None:
@@ -167,6 +146,7 @@ def main() -> None:
         for repo in gh_repos
         if not repo.get("fork")
         and not repo.get("private")
+        and not repo.get("archived")
         and repo["name"] not in SKIP_NAMES
     ]
 
@@ -186,16 +166,18 @@ def main() -> None:
         name = repo["name"]
         seen.add(name)
         mirror = gitlab_by_name.get(name)
-        homepage = (repo.get("homepage") or "").strip() or None
         catalog.append(
             {
                 "name": name,
                 "description": (repo.get("description") or "").strip(),
                 "language": repo.get("language") or "",
+                "topics": repo.get("topics") or [],
                 "category": category_for(name),
+                "status": STATUS.get(name),
+                "stars": repo.get("stargazers_count") or 0,
                 "github": repo["html_url"],
                 "gitlab": mirror["web_url"] if mirror else None,
-                "homepage": homepage,
+                "homepage": LIVE.get(name) or (repo.get("homepage") or "").strip() or None,
                 "updated": day(repo.get("pushed_at")),
             }
         )
@@ -208,7 +190,10 @@ def main() -> None:
                 "name": name,
                 "description": (project.get("description") or "").strip(),
                 "language": "",
+                "topics": project.get("topics") or [],
                 "category": category_for(name),
+                "status": STATUS.get(name),
+                "stars": project.get("star_count") or 0,
                 "github": None,
                 "gitlab": project["web_url"],
                 "homepage": None,
@@ -216,22 +201,13 @@ def main() -> None:
             }
         )
 
-    catalog.sort(key=sort_key)
+    catalog.sort(key=lambda project: project["updated"] or "", reverse=True)
     payload = {
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
-        "org": {
-            "name": "DataKnifeAI",
-            "description": (
-                "Learn and solve problems with AI tools—built to stay "
-                "maintainable through automation, and aligned with software freedom."
-            ),
-            "github": f"https://github.com/{GITHUB_ORG}",
-            "gitlab": f"https://gitlab.com/{GITLAB_GROUP}",
-        },
         "categories": CATEGORY_ORDER,
         "projects": catalog,
     }
-    OUT.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"wrote {len(catalog)} projects to {OUT}")
 
 
