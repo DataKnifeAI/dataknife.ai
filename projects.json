@@ -1,0 +1,278 @@
+{
+  "generated": "2026-09-30",
+  "org": {
+    "name": "DataKnifeAI",
+    "description": "Learn and solve problems with AI tools\u2014built to stay maintainable through automation, and aligned with software freedom.",
+    "github": "https://github.com/DataKnifeAI",
+    "gitlab": "https://gitlab.com/dk-raas/dkai"
+  },
+  "categories": [
+    "Agents",
+    "High Command",
+    "MCP",
+    "Platform",
+    "Games"
+  ],
+  "projects": [
+    {
+      "name": "nauarchos",
+      "description": "Nauarchos (\u03bd\u03b1\u03cd\u03b1\u03c1\u03c7\u03bf\u03c2): Rust Kubernetes control plane for agent fleets \u2014 classes, sandboxes, dependencies, on-demand workers",
+      "language": "Rust",
+      "category": "Agents",
+      "github": "https://github.com/DataKnifeAI/nauarchos",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-08-02"
+    },
+    {
+      "name": "slashbay",
+      "description": "Slashbay: issue webhook intake, cheap-LLM triage, Coder workspace berth, and coding-agent dispatch for the DataKnifeAI fleet.",
+      "language": "Python",
+      "category": "Agents",
+      "github": "https://github.com/DataKnifeAI/slashbay",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/agents/slashbay",
+      "homepage": null,
+      "updated": "2026-08-18"
+    },
+    {
+      "name": "enodios",
+      "description": "Enodios (\u1f18\u03bd\u03cc\u03b4\u03b9\u03bf\u03c2): one-script Linux setup for Hermes Agent + vLLM self-hosting",
+      "language": "Shell",
+      "category": "Agents",
+      "github": "https://github.com/DataKnifeAI/enodios",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-08-01"
+    },
+    {
+      "name": "dioptra",
+      "description": "DIOPTRA: DataKnife agent fleet status board (k8s \u00b7 Cursor/Hermes \u00b7 GitHub/GitLab issue backlog)",
+      "language": "HTML",
+      "category": "Agents",
+      "github": "https://github.com/DataKnifeAI/dioptra",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-08-01"
+    },
+    {
+      "name": "agent-skills",
+      "description": "Shared Cursor/agent skills for DataKnifeAI projects",
+      "language": "Shell",
+      "category": "Agents",
+      "github": "https://github.com/DataKnifeAI/agent-skills",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-08-02"
+    },
+    {
+      "name": "agent-workspace",
+      "description": "Starting workspace repository for Cursor Cloud Agents (managed and self-hosted pools)",
+      "language": "Shell",
+      "category": "Agents",
+      "github": "https://github.com/DataKnifeAI/agent-workspace",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-08-02"
+    },
+    {
+      "name": "high-command-api",
+      "description": "Real-time Hell Divers 2 game data scraper API built with FastAPI. Provides war status, planet tracking, statistics, campaigns, and more with automatic background collection and interactive documentation.",
+      "language": "Python",
+      "category": "High Command",
+      "github": "https://github.com/DataKnifeAI/high-command-api",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/high-command/high-command-api",
+      "homepage": null,
+      "updated": "2026-08-02"
+    },
+    {
+      "name": "high-command-ui",
+      "description": "Strategic web-based UI for the High Command MCP Server. Interactive chat interface for real-time campaign management and data visualization.",
+      "language": "TypeScript",
+      "category": "High Command",
+      "github": "https://github.com/DataKnifeAI/high-command-ui",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/high-command/high-command-ui",
+      "homepage": null,
+      "updated": "2026-09-13"
+    },
+    {
+      "name": "high-command-mcp",
+      "description": "Python MCP Server for High-Command API integration - Real-time Helldivers 2 game data access",
+      "language": "Python",
+      "category": "High Command",
+      "github": "https://github.com/DataKnifeAI/high-command-mcp",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/mcp-servers/high-command-mcp",
+      "homepage": null,
+      "updated": "2026-08-01"
+    },
+    {
+      "name": "proxmox-ve-mcp",
+      "description": "Model Context Protocol (MCP) server for Proxmox Virtual Environment infrastructure management. Control and monitor your Proxmox infrastructure through an AI-powered interface.",
+      "language": "Go",
+      "category": "MCP",
+      "github": "https://github.com/DataKnifeAI/proxmox-ve-mcp",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/mcp-servers/proxmox-ve-mcp",
+      "homepage": null,
+      "updated": "2026-08-02"
+    },
+    {
+      "name": "rancher-manager-mcp",
+      "description": "MCP Server for Rancher Manager API with stdio and HTTP transport support",
+      "language": "Go",
+      "category": "MCP",
+      "github": "https://github.com/DataKnifeAI/rancher-manager-mcp",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/mcp-servers/rancher-manager-mcp",
+      "homepage": null,
+      "updated": "2026-08-01"
+    },
+    {
+      "name": "unifi-manager-mcp",
+      "description": "UniFi Site Manager API MCP Server - A Model Context Protocol server for managing UniFi infrastructure at scale",
+      "language": "Go",
+      "category": "MCP",
+      "github": "https://github.com/DataKnifeAI/unifi-manager-mcp",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/mcp-servers/unifi-manager-mcp",
+      "homepage": null,
+      "updated": "2026-08-02"
+    },
+    {
+      "name": "unifi-network-mcp",
+      "description": "MCP server for UniFi Network management - network devices, WiFi, and firewall management",
+      "language": "Go",
+      "category": "MCP",
+      "github": "https://github.com/DataKnifeAI/unifi-network-mcp",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/mcp-servers/unifi-network-mcp",
+      "homepage": null,
+      "updated": "2026-08-02"
+    },
+    {
+      "name": "unifi-protect-mcp",
+      "description": "MCP server for UniFi Protect surveillance - cameras, sensors, lights, and security monitoring",
+      "language": "Go",
+      "category": "MCP",
+      "github": "https://github.com/DataKnifeAI/unifi-protect-mcp",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/mcp-servers/unifi-protect-mcp",
+      "homepage": null,
+      "updated": "2026-08-02"
+    },
+    {
+      "name": "gitops-mcp",
+      "description": "GitOps MCP repository",
+      "language": "Shell",
+      "category": "MCP",
+      "github": "https://github.com/DataKnifeAI/gitops-mcp",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/gitops-mcp",
+      "homepage": null,
+      "updated": "2026-08-01"
+    },
+    {
+      "name": "rancher-deploy",
+      "description": "Complete Infrastructure-as-Code for deploying Rancher Kubernetes clusters on Proxmox using Terraform. Includes template VM creation, manager and worker clusters, and comprehensive documentation.",
+      "language": "HCL",
+      "category": "Platform",
+      "github": "https://github.com/DataKnifeAI/rancher-deploy",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/rancher-deploy",
+      "homepage": null,
+      "updated": "2026-08-31"
+    },
+    {
+      "name": "gitops-core",
+      "description": "Core GitOps service for certificate management via CloudFlare and Let's Encrypt",
+      "language": "Shell",
+      "category": "Platform",
+      "github": "https://github.com/DataKnifeAI/gitops-core",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/gitops-core",
+      "homepage": null,
+      "updated": "2026-08-01"
+    },
+    {
+      "name": "gitops-tools",
+      "description": "GitOps repository for deploying managed Kubernetes tools (Harbor, etc.) to nprd-apps cluster",
+      "language": "Shell",
+      "category": "Platform",
+      "github": "https://github.com/DataKnifeAI/gitops-tools",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/gitops-tools",
+      "homepage": null,
+      "updated": "2026-08-01"
+    },
+    {
+      "name": "gitops-dev",
+      "description": "Development tools deployed to prd-apps Kubernetes cluster via GitOps",
+      "language": "",
+      "category": "Platform",
+      "github": "https://github.com/DataKnifeAI/gitops-dev",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-08-16"
+    },
+    {
+      "name": "coder-templates",
+      "description": "Custom Coder workspace templates",
+      "language": "HCL",
+      "category": "Platform",
+      "github": "https://github.com/DataKnifeAI/coder-templates",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/coder-templates",
+      "homepage": null,
+      "updated": "2026-08-18"
+    },
+    {
+      "name": "freya",
+      "description": "Kubernetes-ready platform for ComfyUI & SwarmUI Stable Diffusion with GPU support. Built from source with custom Docker images.",
+      "language": "Shell",
+      "category": "Platform",
+      "github": "https://github.com/DataKnifeAI/freya",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/tools/freya",
+      "homepage": null,
+      "updated": "2026-05-29"
+    },
+    {
+      "name": "github-workflows",
+      "description": "Reusable GitHub Actions workflows for DataKnife repositories",
+      "language": "",
+      "category": "Platform",
+      "github": "https://github.com/DataKnifeAI/github-workflows",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-08-01"
+    },
+    {
+      "name": "ck-scenarios",
+      "description": "A collection of hands-on scenarios and practice exercises to prepare for the Certified Kubernetes Administrator (CKA) and Certified Kubernetes Application Developer (CKAD) exams.",
+      "language": "",
+      "category": "Platform",
+      "github": null,
+      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/ck-scenarios",
+      "homepage": null,
+      "updated": "2026-06-03"
+    },
+    {
+      "name": "palworld-operator",
+      "description": "Kubernetes operator for Palworld dedicated game servers (Envoy Gateway pattern, community Docker image)",
+      "language": "Go",
+      "category": "Games",
+      "github": "https://github.com/DataKnifeAI/palworld-operator",
+      "gitlab": null,
+      "homepage": "https://dataknifeai.github.io/palworld-operator/",
+      "updated": "2026-09-13"
+    },
+    {
+      "name": "windrose-operator",
+      "description": "Kubernetes operator for Windrose dedicated game servers using the official Linux Docker image (windroseserver/windroseserver)",
+      "language": "Go",
+      "category": "Games",
+      "github": "https://github.com/DataKnifeAI/windrose-operator",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-08-01"
+    },
+    {
+      "name": "timesplice",
+      "description": "TimeSplitters Rewind Linux installer for CachyOS \u2014 downloads the game and adds it to Steam as a non-Steam Proton game",
+      "language": "Python",
+      "category": "Games",
+      "github": "https://github.com/DataKnifeAI/timesplice",
+      "gitlab": null,
+      "homepage": "https://www.timesplittersrewind.com/",
+      "updated": "2026-09-19"
+    }
+  ]
+}

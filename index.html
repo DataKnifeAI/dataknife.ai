@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DataKnife — projects</title>
+    <meta
+      name="description"
+      content="Public original repositories from DataKnifeAI on GitHub and GitLab."
+    />
+    <meta name="theme-color" content="#f3efe6" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href="https://dataknife.ai/" />
+    <meta property="og:title" content="DataKnife" />
+    <meta
+      property="og:description"
+      content="Learn and solve problems with AI tools. Public original repositories from GitHub and GitLab."
+    />
+    <meta property="og:url" content="https://dataknife.ai/" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,550;1,6..72,450&family=Outfit:wght@380;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#catalog">Skip to projects</a>
+    <header class="top">
+      <a class="mark" href="#top">DataKnife</a>
+      <nav class="top-nav" aria-label="Organization">
+        <a href="https://github.com/DataKnifeAI">GitHub</a>
+        <a href="https://gitlab.com/dk-raas/dkai">GitLab</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="kicker">dataknife.ai</p>
+        <h1>Learn and solve problems with AI tools.</h1>
+        <p class="lede">
+          Built to stay maintainable through automation, and aligned with
+          software freedom.
+        </p>
+        <p class="note" id="summary">Loading the public index…</p>
+      </section>
+
+      <div class="toolbar">
+        <div class="filters" id="filters" role="tablist" aria-label="Project categories"></div>
+        <label class="search">
+          <span class="sr">Search projects</span>
+          <input id="query" type="search" placeholder="Search" autocomplete="off" />
+        </label>
+      </div>
+
+      <section id="catalog" aria-live="polite"></section>
+    </main>
+
+    <footer class="colophon">
+      <p>DataKnifeAI · United States</p>
+      <p>Canonical repositories are on GitHub. GitLab holds public mirrors under dk-raas/dkai.</p>
+    </footer>
+
+    <noscript>
+      <p class="noscript">
+        This index needs JavaScript to render. The same list is in
+        <a href="projects.json">projects.json</a>, or browse
+        <a href="https://github.com/DataKnifeAI">github.com/DataKnifeAI</a>.
+      </p>
+    </noscript>
+
+    <script src="catalog.js"></script>
+  </body>
+</html>
