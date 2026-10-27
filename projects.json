@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30",
+  "generated": "2026-10-27",
   "categories": [
     "Agents",
     "MCP",
@@ -7,6 +7,213 @@
     "Apps"
   ],
   "projects": [
+    {
+      "name": "pulseblade",
+      "description": "Pulseblade: agent-first infrastructure monitor. MCP-native telemetry, change checkpoints, and gated remediation for hosts, containers, and clusters.",
+      "language": "Rust",
+      "topics": [
+        "agents",
+        "aiops",
+        "mcp",
+        "monitoring",
+        "observability",
+        "rust",
+        "self-hosted"
+      ],
+      "category": "Platform",
+      "status": "Active",
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/pulseblade",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/pulseblade",
+      "homepage": null,
+      "updated": "2026-10-27"
+    },
+    {
+      "name": "high-command-ui",
+      "description": "Strategic web-based UI for the High Command MCP Server. Interactive chat interface for real-time campaign management and data visualization.",
+      "language": "TypeScript",
+      "topics": [
+        "chat-interface",
+        "helldivers-2",
+        "mcp",
+        "react",
+        "typescript",
+        "ui"
+      ],
+      "category": "Apps",
+      "status": "Live",
+      "stars": 1,
+      "github": "https://github.com/DataKnifeAI/high-command-ui",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/high-command/high-command-ui",
+      "homepage": "https://hc.dataknife.ai/",
+      "updated": "2026-10-25"
+    },
+    {
+      "name": "emberrom",
+      "description": "EmberROM — process and tooling to port vendor laptop BIOS to open firmware; first target Razer Blade Stealth Late 2019 (RZ09-03101)",
+      "language": "Python",
+      "topics": [
+        "bios",
+        "cachyos",
+        "coreboot",
+        "emberrom",
+        "firmware",
+        "ice-lake",
+        "linux",
+        "open-firmware",
+        "razer",
+        "uefi"
+      ],
+      "category": "Platform",
+      "status": null,
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/emberrom",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-10-21"
+    },
+    {
+      "name": "gitops-tools",
+      "description": "GitOps repository for deploying managed Kubernetes tools (Harbor, etc.) to nprd-apps cluster",
+      "language": "Shell",
+      "topics": [
+        "fleet",
+        "gitops",
+        "harbor",
+        "helm",
+        "infrastructure",
+        "kubernetes",
+        "rancher"
+      ],
+      "category": "Platform",
+      "status": null,
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/gitops-tools",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/gitops-tools",
+      "homepage": null,
+      "updated": "2026-10-13"
+    },
+    {
+      "name": "rancher-deploy",
+      "description": "Complete Infrastructure-as-Code for deploying Rancher Kubernetes clusters on Proxmox using Terraform. Includes template VM creation, manager and worker clusters, and comprehensive documentation.",
+      "language": "HCL",
+      "topics": [
+        "iac",
+        "infrastructure",
+        "kubernetes",
+        "proxmox",
+        "rancher",
+        "rke2",
+        "terraform"
+      ],
+      "category": "Platform",
+      "status": null,
+      "stars": 1,
+      "github": "https://github.com/DataKnifeAI/rancher-deploy",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/rancher-deploy",
+      "homepage": null,
+      "updated": "2026-10-06"
+    },
+    {
+      "name": "gitops-mcp",
+      "description": "GitOps MCP repository",
+      "language": "",
+      "topics": [
+        "fleet",
+        "gitops",
+        "infrastructure",
+        "kubernetes",
+        "kustomize",
+        "mcp"
+      ],
+      "category": "MCP",
+      "status": null,
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/gitops-mcp",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/gitops-mcp",
+      "homepage": null,
+      "updated": "2026-10-06"
+    },
+    {
+      "name": "gitops-dev",
+      "description": "Development tools deployed to prd-apps Kubernetes cluster via GitOps",
+      "language": "",
+      "topics": [
+        "coder",
+        "fleet",
+        "gitops",
+        "helm",
+        "infrastructure",
+        "kubernetes"
+      ],
+      "category": "Platform",
+      "status": null,
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/gitops-dev",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-10-06"
+    },
+    {
+      "name": "gitops-core",
+      "description": "Core GitOps service for certificate management via CloudFlare and Let's Encrypt",
+      "language": "Shell",
+      "topics": [
+        "cert-manager",
+        "cloudflare",
+        "fleet",
+        "gitops",
+        "infrastructure",
+        "kubernetes",
+        "letsencrypt"
+      ],
+      "category": "Platform",
+      "status": null,
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/gitops-core",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/gitops-core",
+      "homepage": null,
+      "updated": "2026-10-04"
+    },
+    {
+      "name": "palworld-operator",
+      "description": "Kubernetes operator for Palworld dedicated game servers (Envoy Gateway pattern, community Docker image)",
+      "language": "Go",
+      "topics": [
+        "envoy-gateway",
+        "gameserver",
+        "go",
+        "kubernetes",
+        "operator",
+        "palworld"
+      ],
+      "category": "Apps",
+      "status": "Beta",
+      "stars": 2,
+      "github": "https://github.com/DataKnifeAI/palworld-operator",
+      "gitlab": null,
+      "homepage": "https://dataknifeai.github.io/palworld-operator/",
+      "updated": "2026-10-04"
+    },
+    {
+      "name": "agent-hub",
+      "description": "Front door for DataKnifeAI agent tooling: install skills, plugins, and editor extensions into the tool you use.",
+      "language": "JavaScript",
+      "topics": [
+        "agent-plugins",
+        "agent-skills",
+        "agents",
+        "developer-tools",
+        "mcp"
+      ],
+      "category": "Agents",
+      "status": "Live",
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/agent-hub",
+      "gitlab": null,
+      "homepage": "https://dataknifeai.github.io/agent-hub/",
+      "updated": "2026-09-30"
+    },
     {
       "name": "timesplice",
       "description": "TimeSplitters Rewind Linux installer for CachyOS — downloads the game and adds it to Steam as a non-Steam Proton game",
@@ -30,67 +237,6 @@
       "gitlab": null,
       "homepage": "https://www.timesplittersrewind.com/",
       "updated": "2026-09-19"
-    },
-    {
-      "name": "high-command-ui",
-      "description": "Strategic web-based UI for the High Command MCP Server. Interactive chat interface for real-time campaign management and data visualization.",
-      "language": "TypeScript",
-      "topics": [
-        "chat-interface",
-        "helldivers-2",
-        "mcp",
-        "react",
-        "typescript",
-        "ui"
-      ],
-      "category": "Apps",
-      "status": "Live",
-      "stars": 1,
-      "github": "https://github.com/DataKnifeAI/high-command-ui",
-      "gitlab": "https://gitlab.com/dk-raas/dkai/high-command/high-command-ui",
-      "homepage": "https://hc.dataknife.ai/",
-      "updated": "2026-09-13"
-    },
-    {
-      "name": "palworld-operator",
-      "description": "Kubernetes operator for Palworld dedicated game servers (Envoy Gateway pattern, community Docker image)",
-      "language": "Go",
-      "topics": [
-        "envoy-gateway",
-        "gameserver",
-        "go",
-        "kubernetes",
-        "operator",
-        "palworld"
-      ],
-      "category": "Apps",
-      "status": "Beta",
-      "stars": 2,
-      "github": "https://github.com/DataKnifeAI/palworld-operator",
-      "gitlab": null,
-      "homepage": "https://dataknifeai.github.io/palworld-operator/",
-      "updated": "2026-09-13"
-    },
-    {
-      "name": "rancher-deploy",
-      "description": "Complete Infrastructure-as-Code for deploying Rancher Kubernetes clusters on Proxmox using Terraform. Includes template VM creation, manager and worker clusters, and comprehensive documentation.",
-      "language": "HCL",
-      "topics": [
-        "iac",
-        "infrastructure",
-        "kubernetes",
-        "proxmox",
-        "rancher",
-        "rke2",
-        "terraform"
-      ],
-      "category": "Platform",
-      "status": null,
-      "stars": 1,
-      "github": "https://github.com/DataKnifeAI/rancher-deploy",
-      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/rancher-deploy",
-      "homepage": null,
-      "updated": "2026-08-31"
     },
     {
       "name": "coder-templates",
@@ -131,26 +277,6 @@
       "gitlab": "https://gitlab.com/dk-raas/dkai/agents/slashbay",
       "homepage": null,
       "updated": "2026-08-18"
-    },
-    {
-      "name": "gitops-dev",
-      "description": "Development tools deployed to prd-apps Kubernetes cluster via GitOps",
-      "language": "",
-      "topics": [
-        "coder",
-        "fleet",
-        "gitops",
-        "helm",
-        "infrastructure",
-        "kubernetes"
-      ],
-      "category": "Platform",
-      "status": null,
-      "stars": 0,
-      "github": "https://github.com/DataKnifeAI/gitops-dev",
-      "gitlab": null,
-      "homepage": null,
-      "updated": "2026-08-16"
     },
     {
       "name": "high-command-api",
@@ -337,47 +463,6 @@
       "updated": "2026-08-01"
     },
     {
-      "name": "gitops-mcp",
-      "description": "GitOps MCP repository",
-      "language": "Shell",
-      "topics": [
-        "fleet",
-        "gitops",
-        "infrastructure",
-        "kubernetes",
-        "kustomize",
-        "mcp"
-      ],
-      "category": "MCP",
-      "status": null,
-      "stars": 0,
-      "github": "https://github.com/DataKnifeAI/gitops-mcp",
-      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/gitops-mcp",
-      "homepage": null,
-      "updated": "2026-08-01"
-    },
-    {
-      "name": "gitops-tools",
-      "description": "GitOps repository for deploying managed Kubernetes tools (Harbor, etc.) to nprd-apps cluster",
-      "language": "Shell",
-      "topics": [
-        "fleet",
-        "gitops",
-        "harbor",
-        "helm",
-        "infrastructure",
-        "kubernetes",
-        "rancher"
-      ],
-      "category": "Platform",
-      "status": null,
-      "stars": 0,
-      "github": "https://github.com/DataKnifeAI/gitops-tools",
-      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/gitops-tools",
-      "homepage": null,
-      "updated": "2026-08-01"
-    },
-    {
       "name": "rancher-manager-mcp",
       "description": "MCP Server for Rancher Manager API with stdio and HTTP transport support",
       "language": "Go",
@@ -395,27 +480,6 @@
       "stars": 0,
       "github": "https://github.com/DataKnifeAI/rancher-manager-mcp",
       "gitlab": "https://gitlab.com/dk-raas/dkai/mcp-servers/rancher-manager-mcp",
-      "homepage": null,
-      "updated": "2026-08-01"
-    },
-    {
-      "name": "gitops-core",
-      "description": "Core GitOps service for certificate management via CloudFlare and Let's Encrypt",
-      "language": "Shell",
-      "topics": [
-        "cert-manager",
-        "cloudflare",
-        "fleet",
-        "gitops",
-        "infrastructure",
-        "kubernetes",
-        "letsencrypt"
-      ],
-      "category": "Platform",
-      "status": null,
-      "stars": 0,
-      "github": "https://github.com/DataKnifeAI/gitops-core",
-      "gitlab": "https://gitlab.com/dk-raas/dkai/devops/gitops-core",
       "homepage": null,
       "updated": "2026-08-01"
     },
@@ -528,7 +592,7 @@
       ],
       "category": "Apps",
       "status": null,
-      "stars": 0,
+      "stars": 1,
       "github": "https://github.com/DataKnifeAI/freya",
       "gitlab": "https://gitlab.com/dk-raas/dkai/tools/freya",
       "homepage": null,

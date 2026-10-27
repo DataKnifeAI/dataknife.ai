@@ -31,6 +31,9 @@ CATEGORIES = {
     "dioptra": "Agents",
     "agent-skills": "Agents",
     "agent-workspace": "Agents",
+    "agent-hub": "Agents",
+    "pulseblade": "Platform",
+    "emberrom": "Platform",
     "high-command-api": "Apps",
     "high-command-ui": "Apps",
     "high-command-mcp": "MCP",
@@ -58,12 +61,15 @@ CATEGORY_ORDER = ["Agents", "MCP", "Platform", "Apps"]
 STATUS = {
     "nauarchos": "Design",
     "slashbay": "Active",
+    "pulseblade": "Active",
+    "agent-hub": "Live",
     "palworld-operator": "Beta",
     "high-command-ui": "Live",
 }
 
 LIVE = {
     "high-command-ui": "https://hc.dataknife.ai/",
+    "agent-hub": "https://dataknifeai.github.io/agent-hub/",
 }
 
 
