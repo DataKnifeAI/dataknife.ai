@@ -826,6 +826,16 @@ h1 {
   margin: 6px 0 0;
 }
 
+.about-draft {
+  margin-top: 8px;
+  max-width: 44rem;
+}
+
+.about-actions {
+  padding-top: 36px;
+  padding-bottom: 72px;
+}
+
 .repo-toolbar {
   display: flex;
   flex-wrap: wrap;
@@ -1025,7 +1035,8 @@ h1 {
     width: calc(100% - 32px);
   }
 
-  .site-nav a:nth-child(n + 3) {
+  /* Keep Overview / Projects / About; hide external social links on small screens */
+  .site-nav a:nth-child(n + 4) {
     display: none;
   }
 
@@ -1089,6 +1100,30 @@ h1 {
   .hosts {
     margin-left: 0;
   }
+}
+
+.about-stub {
+  max-width: 40rem;
+  padding: 8px 0 64px;
+}
+
+.about-lede {
+  margin: 0 0 24px;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: var(--fg-muted);
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.about-note {
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
