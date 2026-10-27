@@ -68,6 +68,10 @@ Strong in infrastructure automation, performance characterization, root cause an
 Bachelor of Science, Electronics & Communications Engineering Technology | ITT Technical Institute, Rancho Cordova | 2010–2012  
 Associate of Science, Computer & Electronics Engineering Technology | ITT Technical Institute, Rancho Cordova | 2008–2010  
 
+## Interests
+
+Anime, gaming, and continuous learning—currently using AI to solve problems via DataKnifeAI.
+
 ## Portfolio
 
 GitHub: https://github.com/DataKnifeAI | GitLab: https://gitlab.com/dk-raas/dkai  
