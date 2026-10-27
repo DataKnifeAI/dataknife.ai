@@ -826,9 +826,85 @@ h1 {
   margin: 6px 0 0;
 }
 
-.about-draft {
-  margin-top: 8px;
+.about-page {
+  padding-bottom: 48px;
+}
+
+.about-section {
+  padding-top: 40px;
   max-width: 44rem;
+}
+
+.about-section:first-of-type {
+  padding-top: 16px;
+}
+
+.about-prose p {
+  margin: 0 0 1rem;
+  line-height: 1.65;
+  color: var(--fg-muted);
+}
+
+.about-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.about-personal {
+  margin-top: 1.25rem;
+  padding: 16px 18px;
+  border-left: 3px solid var(--olive-bright);
+  background: var(--bg-inset);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--fg) !important;
+}
+
+.about-timeline,
+.about-skills,
+.about-edu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-timeline li,
+.about-edu li {
+  margin: 0 0 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-muted);
+}
+
+.about-timeline li:last-child,
+.about-edu li:last-child,
+.about-skills li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.about-timeline span,
+.about-edu span {
+  display: block;
+  margin-top: 4px;
+  color: var(--fg-muted);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.about-skills li {
+  margin: 0 0 10px;
+  color: var(--fg-muted);
+  line-height: 1.5;
+}
+
+.about-skills strong,
+.about-timeline strong,
+.about-edu strong {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.about-links .actions {
+  margin-top: 8px;
 }
 
 .about-actions {

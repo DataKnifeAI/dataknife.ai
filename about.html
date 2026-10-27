@@ -6,7 +6,7 @@
     <title>About · DataKnifeAI</title>
     <meta
       name="description"
-      content="About Lee Chapman and DataKnifeAI. Resume download available; full About copy pending review."
+      content="Lee Chapman — DevOps Lead at Solidigm. Kubernetes, GitOps, CSI, and open infrastructure under DataKnifeAI."
     />
     <meta name="theme-color" content="#0a0b0c" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -17,7 +17,7 @@
     <meta property="og:title" content="About · DataKnifeAI" />
     <meta
       property="og:description"
-      content="About Lee Chapman and DataKnifeAI. Resume download available."
+      content="Lee Chapman — DevOps Lead. Platform engineering, Kubernetes, and DataKnifeAI open work."
     />
     <meta property="og:url" content="https://dataknife.ai/about.html" />
     <meta property="og:image" content="https://dataknife.ai/assets/og.jpg" />
@@ -46,31 +46,128 @@
       </div>
     </header>
 
-    <main id="main" class="wrap">
+    <main id="main" class="wrap about-page">
       <header class="page-head">
         <h1>About</h1>
-        <p class="muted">Lee Chapman · DataKnifeAI</p>
+        <p class="muted">Lee Chapman · DevOps Lead · DataKnifeAI</p>
       </header>
 
-      <div class="callout about-draft">
-        <h2>Draft pending review</h2>
-        <p>
-          Full About copy is drafted offline for review and is not published here yet.
-          Resume download and LinkedIn are available below.
-        </p>
-      </div>
+      <section class="section about-section" aria-labelledby="intro-title">
+        <header class="section-head">
+          <h2 id="intro-title">Intro</h2>
+        </header>
+        <div class="about-prose">
+          <p>
+            I’m a DevOps Lead at Solidigm (December 2021–Present), with earlier roles at Intel
+            spanning validation, software engineering, and DevOps. I build and operate Kubernetes
+            platforms, CI/CD, and infrastructure-as-code—Node.js backends for internal engineering
+            tools, production operators, CSI storage, and GitOps—so teams can ship reliably without
+            drama.
+          </p>
+          <p>
+            Outside the day job I run DataKnifeAI: open infrastructure, agent pipelines, and
+            tools meant to stay maintainable. Sacramento-based; remote-friendly.
+          </p>
+          <p class="about-personal">
+            I take priorities, timelines, and the weight of the work seriously—and I’m clear on
+            what matters most. Family comes first, and I keep a real work-life balance. I’m
+            dependable when it counts, at home and on the job. There will be good stretches and
+            hard ones; stressing out helps nobody. Better to stay clear-headed, read the room,
+            and plot the next step.
+          </p>
+        </div>
+      </section>
 
-      <section class="section about-actions" aria-label="Links">
+      <section class="section about-section" aria-labelledby="experience-title">
+        <header class="section-head">
+          <h2 id="experience-title">Experience highlights</h2>
+        </header>
+        <ul class="about-timeline">
+          <li>
+            <strong>DevOps Lead</strong> · Solidigm · Rancho Cordova, CA · Dec 2021 – Present
+            <span>Lead DevOps for engineering teams; Kubernetes operators, Terraform/GitOps CI/CD, Node.js test-platform backends, observability, and incident response.</span>
+          </li>
+          <li>
+            <strong>DevOps Engineer</strong> · Intel · Folsom, CA · Apr 2020 – Dec 2021
+            <span>Automated deployment for storage and semiconductor environments with Python, Go, and Terraform.</span>
+          </li>
+          <li>
+            <strong>Software Engineer</strong> · Intel · Folsom, CA · May 2019 – Apr 2020
+            <span>Web applications and tooling for test automation and internal platforms.</span>
+          </li>
+          <li>
+            <strong>Validation Engineer</strong> · Intel · Folsom, CA · Jan 2018 – May 2019
+            <span>Test automation frameworks for storage devices; root-cause analysis on firmware and storage systems.</span>
+          </li>
+          <li>
+            <strong>Earlier</strong> · Kelly Services (Intel) · Adecco (HPE) · 2011 – 2018
+            <span>Firmware and storage validation, automated test frameworks, and large-scale R&amp;D test environments.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section about-section" aria-labelledby="skills-title">
+        <header class="section-head">
+          <h2 id="skills-title">Skills</h2>
+        </header>
+        <ul class="about-skills">
+          <li><strong>Platform</strong> — Kubernetes (RKE2, Rancher), Docker, Helm, GitOps (Fleet), Terraform, Ansible</li>
+          <li><strong>Operators &amp; storage</strong> — RabbitMQ, Redis, CloudNativePG, MongoDB, GitHub ARC; CSI / TrueNAS NFS</li>
+          <li><strong>Languages</strong> — Python, Go, Bash, PowerShell, Node.js, Java; HTML/CSS/JS, Angular</li>
+          <li><strong>CI/CD &amp; cloud</strong> — GitLab CI, GitHub Actions; Azure, GCP; Proxmox, VMware, Hyper-V</li>
+          <li><strong>Observability</strong> — DataDog, New Relic, Splunk, ELK, Grafana</li>
+          <li><strong>AI tooling</strong> — Cursor, GitHub Copilot; GPU workloads on Kubernetes (CUDA, Device Plugin)</li>
+        </ul>
+      </section>
+
+      <section class="section about-section" aria-labelledby="education-title">
+        <header class="section-head">
+          <h2 id="education-title">Education</h2>
+        </header>
+        <ul class="about-edu">
+          <li>
+            <strong>Bachelor of Science</strong>, Electronics &amp; Communications Engineering Technology
+            <span>ITT Technical Institute, Rancho Cordova · 2010–2012</span>
+          </li>
+          <li>
+            <strong>Associate of Science</strong>, Computer &amp; Electronics Engineering Technology
+            <span>ITT Technical Institute, Rancho Cordova · 2008–2010</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section about-section" aria-labelledby="open-title">
+        <header class="section-head">
+          <h2 id="open-title">DataKnifeAI / open work</h2>
+        </header>
+        <div class="about-prose">
+          <p>
+            Public originals live under
+            <a href="https://github.com/DataKnifeAI">GitHub/DataKnifeAI</a>
+            and mirrors on
+            <a href="https://gitlab.com/dk-raas/dkai">GitLab dk-raas/dkai</a>.
+            Highlights include TrueNAS CSI upstream engagement, Proxmox → RKE2/Rancher GitOps
+            (<a href="https://github.com/DataKnifeAI/rancher-deploy">rancher-deploy</a>),
+            and agent-pipeline experiments aimed at boring, operable automation.
+          </p>
+        </div>
+      </section>
+
+      <section class="section about-section about-links" aria-labelledby="links-title">
+        <header class="section-head">
+          <h2 id="links-title">Links</h2>
+          <p>Contact via LinkedIn only—no phone or email on this site.</p>
+        </header>
         <div class="actions">
-          <a class="btn btn-primary" href="assets/resume.pdf" download="Lee_Chapman_Resume.pdf">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/lee-chapman-583ab796">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn" href="assets/resume.pdf" download="Lee_Chapman_Resume.pdf">
             Download resume (PDF)
           </a>
           <a class="btn" href="assets/resume.md" download="Lee_Chapman_Resume.md">
             Resume (Markdown)
-          </a>
-          <a class="btn" href="https://www.linkedin.com/in/lee-chapman-583ab796">
-            <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
           </a>
           <a class="btn" href="projects.html">Browse projects</a>
         </div>

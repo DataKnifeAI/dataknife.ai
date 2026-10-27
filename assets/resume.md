@@ -1,13 +1,14 @@
 # Lee Chapman
-Senior DevOps Engineer | AI Infrastructure | Cloud Platforms
+DevOps Lead | Senior DevOps Engineer | AI Infrastructure | Cloud Platforms
 
-Sacramento, CA | Remote / Santa Clara OK | (916) 919-9193 | lee@chapman.run | linkedin.com/in/lee-chapman-583ab796
+Sacramento, CA | Remote / Santa Clara OK  
+Contact via LinkedIn: https://www.linkedin.com/in/lee-chapman-583ab796
 
 ## Professional Summary
 
-Senior DevOps Engineer with 14+ years of technical experience and 5+ years building and operating large-scale distributed systems in semiconductor and storage.
+DevOps Lead with 14+ years of technical experience and 5+ years building and operating large-scale distributed systems in semiconductor and storage.
 
-Expert in Kubernetes, Terraform, Python, and Go with a track record of automating deployments, improving platform reliability, and leading infrastructure initiatives.
+Expert in Kubernetes, Terraform, Python, and Go with a track record of automating deployments, improving platform reliability, and leading infrastructure initiatives. I take priorities, timelines, and the weight of the work seriously—and stay clear-headed under pressure with a real work-life balance.
 
 **Node.js since 2018** for backend services on an **internal engineering test platform**; production experience with **Kubernetes operators** (RabbitMQ, Redis, CloudNativePG, MongoDB, GitHub ARC) and **CSI** (including **TrueNAS CSI** upstream engagement).
 
@@ -64,8 +65,8 @@ Strong in infrastructure automation, performance characterization, root cause an
 
 ## Education
 
-Bachelor of Science, Computer Science | ITT Technical Institute, Rancho Cordova | 2010-2012  
-Associate of Science, Computer Science | ITT Technical Institute, Rancho Cordova | 2008-2010  
+Bachelor of Science, Electronics & Communications Engineering Technology | ITT Technical Institute, Rancho Cordova | 2010–2012  
+Associate of Science, Computer & Electronics Engineering Technology | ITT Technical Institute, Rancho Cordova | 2008–2010  
 
 ## Portfolio
 
