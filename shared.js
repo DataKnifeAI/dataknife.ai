@@ -52,12 +52,18 @@ function statusBadge(status) {
   return el("span", { class: `status status-${status.toLowerCase()}`, text: status });
 }
 
+const EXTERNAL = { target: "_blank", rel: "noopener noreferrer" };
+
+function externalLink(href, text) {
+  return el("a", { href, ...EXTERNAL, text });
+}
+
 function repoCard(project, { compact = false } = {}) {
   const primary = project.github || project.gitlab;
   const title = el(
     "h3",
     { class: "repo-name" },
-    el("a", { href: primary, text: project.name }),
+    externalLink(primary, project.name),
     el("span", { class: "visibility", text: "Public" }),
     statusBadge(project.status),
   );
@@ -70,9 +76,9 @@ function repoCard(project, { compact = false } = {}) {
   const hosts = el(
     "span",
     { class: "hosts" },
-    project.github ? el("a", { href: project.github, text: "GitHub" }) : null,
-    project.gitlab ? el("a", { href: project.gitlab, text: "GitLab" }) : null,
-    project.homepage ? el("a", { href: project.homepage, text: "Site" }) : null,
+    project.github ? externalLink(project.github, "GitHub") : null,
+    project.gitlab ? externalLink(project.gitlab, "GitLab") : null,
+    project.homepage ? externalLink(project.homepage, "Site") : null,
   );
 
   const meta = el(
