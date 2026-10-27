@@ -849,15 +849,6 @@ h1 {
   margin-bottom: 0;
 }
 
-.about-personal {
-  margin-top: 1.25rem;
-  padding: 16px 18px;
-  border-left: 3px solid var(--olive-bright);
-  background: var(--bg-inset);
-  border-radius: 0 var(--radius) var(--radius) 0;
-  color: var(--fg) !important;
-}
-
 .about-timeline,
 .about-skills,
 .about-edu {
