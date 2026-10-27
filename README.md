@@ -2,8 +2,8 @@
 
 Portfolio site for [DataKnifeAI](https://github.com/DataKnifeAI), served at [dataknife.ai](https://dataknife.ai) from GitHub Pages.
 
-- `index.html` — mission, north star, featured work, build layers, recent activity, principles
-- `projects.html` — every public original repository, filterable by category
+- `index.html`: mission, north star, featured work, build layers, recent activity, principles
+- `projects.html`: every public original repository, filterable by category
 
 Mission and principles copy follows the org profile in [DataKnifeAI/.github](https://github.com/DataKnifeAI/.github/blob/main/profile/README.md). Colors come from the org logo.
 

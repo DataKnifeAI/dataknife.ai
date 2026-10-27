@@ -144,6 +144,17 @@ def day(value: str | None) -> str | None:
     return value[:10] if value else None
 
 
+def site_text(value: str) -> str:
+    """Drop sentence dashes so catalog blurbs match the rest of the site."""
+    value = value.replace(" \u2013 ", ", ")
+    parts = value.split(" \u2014 ")
+    if len(parts) == 1:
+        return value.replace("\u2014", ": ")
+    if len(parts) == 2 and ":" in parts[0]:
+        return f"{parts[0]} ({parts[1]})"
+    return ": ".join(parts).replace("\u2014", ": ")
+
+
 def main() -> None:
     gh_repos = github_repos()
     fork_names = {repo["name"] for repo in gh_repos if repo.get("fork")}
@@ -175,7 +186,7 @@ def main() -> None:
         catalog.append(
             {
                 "name": name,
-                "description": (repo.get("description") or "").strip(),
+                "description": site_text((repo.get("description") or "").strip()),
                 "language": repo.get("language") or "",
                 "topics": repo.get("topics") or [],
                 "category": category_for(name),
@@ -194,7 +205,7 @@ def main() -> None:
         catalog.append(
             {
                 "name": name,
-                "description": (project.get("description") or "").strip(),
+                "description": site_text((project.get("description") or "").strip()),
                 "language": "",
                 "topics": project.get("topics") or [],
                 "category": category_for(name),

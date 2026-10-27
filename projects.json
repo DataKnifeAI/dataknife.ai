@@ -50,7 +50,7 @@
     },
     {
       "name": "emberrom",
-      "description": "EmberROM — process and tooling to port vendor laptop BIOS to open firmware; first target Razer Blade Stealth Late 2019 (RZ09-03101)",
+      "description": "EmberROM: process and tooling to port vendor laptop BIOS to open firmware; first target Razer Blade Stealth Late 2019 (RZ09-03101)",
       "language": "Python",
       "topics": [
         "bios",
@@ -216,7 +216,7 @@
     },
     {
       "name": "timesplice",
-      "description": "TimeSplitters Rewind Linux installer for CachyOS — downloads the game and adds it to Steam as a non-Steam Proton game",
+      "description": "TimeSplitters Rewind Linux installer for CachyOS: downloads the game and adds it to Steam as a non-Steam Proton game",
       "language": "Python",
       "topics": [
         "cachyos",
@@ -423,7 +423,7 @@
     },
     {
       "name": "nauarchos",
-      "description": "Nauarchos (ναύαρχος): Rust Kubernetes control plane for agent fleets — classes, sandboxes, dependencies, on-demand workers",
+      "description": "Nauarchos (ναύαρχος): Rust Kubernetes control plane for agent fleets (classes, sandboxes, dependencies, on-demand workers)",
       "language": "Rust",
       "topics": [
         "agents",

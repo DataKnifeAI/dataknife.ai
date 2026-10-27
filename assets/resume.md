@@ -1,14 +1,14 @@
 # Lee Chapman
 DevOps Lead | Senior DevOps Engineer | AI Infrastructure | Cloud Platforms
 
-Sacramento, CA | Remote / Santa Clara OK  
+Sacramento, CA | Remote  
 Contact via LinkedIn: https://www.linkedin.com/in/lee-chapman-583ab796
 
 ## Professional Summary
 
 DevOps Lead with 14+ years of technical experience and 5+ years building and operating large-scale distributed systems in semiconductor and storage.
 
-Expert in Kubernetes, Terraform, Python, and Go with a track record of automating deployments, improving platform reliability, and leading infrastructure initiatives. I take priorities, timelines, and the weight of the work seriously—and stay clear-headed under pressure with a real work-life balance.
+Expert in Kubernetes, Terraform, Python, and Go with a track record of automating deployments, improving platform reliability, and leading infrastructure initiatives. I take priorities, timelines, and the weight of the work seriously, and stay clear-headed under pressure with a real work-life balance.
 
 **Node.js since 2018** for backend services on an **internal engineering test platform**; production experience with **Kubernetes operators** (RabbitMQ, Redis, CloudNativePG, MongoDB, GitHub ARC) and **CSI** (including **TrueNAS CSI** upstream engagement).
 
@@ -18,15 +18,15 @@ Strong in infrastructure automation, performance characterization, root cause an
 
 ## Core Technical Skills
 
-**AI-Assisted Development:** Cursor (IDE, CLI), GitHub Copilot (IDE, CLI)  
-**AI/ML Infrastructure:** Freya—containerizing existing projects (Ollama, SwarmUI, ComfyUI) for Kubernetes on NVIDIA CUDA; GPU scheduling (nvidia.com/gpu), NVIDIA Device Plugin; PVC/CSI for model storage  
+**AI-Assisted Development:** Cursor (IDE, CLI), GitHub Copilot (IDE, CLI); MCP servers  
+**AI/ML Infrastructure:** Freya: containerizing existing projects (Ollama, SwarmUI, ComfyUI) for Kubernetes on NVIDIA CUDA; GPU scheduling (nvidia.com/gpu), NVIDIA Device Plugin; PVC/CSI for model storage  
 **Automation & Tools:** Ansible, Helm, Terraform, IaC, GitOps, Fleet  
 **Binary Storage:** Artifactory, Harbor, GitLab Packages  
-**CI/CD & Version Control:** GitLab + CI, GitHub + Actions  
+**CI/CD & Version Control:** GitLab CI (container image builds), GitHub Actions  
 **Cloud & Virtualization:** Azure, Google Cloud, Proxmox VE, VMware, Hyper-V  
 **Collaboration:** JIRA, Confluence  
-**Infrastructure & Orchestration:** Kubernetes (RKE2, Rancher), Docker; operators—RabbitMQ, Redis, CloudNativePG, MongoDB, GitHub ARC; DataDog on Kubernetes (company deployments)  
-**Languages:** Python, Go, Bash, PowerShell, Java; **Node.js**; HTML, JavaScript, CSS, Angular  
+**Infrastructure & Orchestration:** Kubernetes (RKE2, Rancher), Docker; operators (RabbitMQ, Redis, CloudNativePG / Postgres, MongoDB, GitHub ARC); DataDog on Kubernetes (company deployments)  
+**Languages:** Python, Go, Rust, Bash, PowerShell, Java; **Node.js**; HTML, JavaScript, CSS, Angular  
 **Observability & Monitoring:** DataDog, New Relic, Splunk, ELK Stack, Grafana Stack  
 **Systems & Storage:** Linux, Windows, Networking, Storage (NFS, iSCSI), **CSI** (TrueNAS / multi-node NFS); open-source CSI contributions (see Portfolio)  
 
@@ -70,7 +70,7 @@ Associate of Science, Computer & Electronics Engineering Technology | ITT Techni
 
 ## Interests
 
-Anime, gaming, and continuous learning—currently using AI to solve problems via DataKnifeAI.
+Anime, gaming, and continuous learning, currently using AI to solve problems via DataKnifeAI.
 
 ## Portfolio
 
@@ -79,3 +79,5 @@ GitHub: https://github.com/DataKnifeAI | GitLab: https://gitlab.com/dk-raas/dkai
 **CSI / storage:** [TrueNAS CSI #3](https://github.com/truenas/truenas-csi/issues/3) (multi-node NFS / ControllerPublishVolume), [#4](https://github.com/truenas/truenas-csi/issues/4) (StorageClass mapAllUser / mapAllGroup)  
 
 **Infra / GitOps:** [rancher-deploy](https://github.com/DataKnifeAI/rancher-deploy) (Proxmox → RKE2, Rancher, TrueNAS storage) · [gitops-tools](https://github.com/DataKnifeAI/gitops-tools) · [gitops-dev](https://github.com/DataKnifeAI/gitops-dev)  
+
+**Agents / monitoring:** [pulseblade](https://github.com/DataKnifeAI/pulseblade) (Rust, Apache-2.0: collectors, hub, Postgres journal, MCP)  
