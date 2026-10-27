@@ -507,7 +507,8 @@ h1 {
 .feature + .feature,
 .feature + .feature-pair,
 .feature-lead + .feature,
-.feature-lead + .feature-pair {
+.feature-lead + .feature-pair,
+.feature-pair + .feature-pair {
   margin-top: 16px;
 }
 
@@ -521,6 +522,22 @@ h1 {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.feature-pair .repo-trio {
+  margin-top: 16px;
+}
+
+.repo-trio .repo-muted {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--fg-muted);
+}
+
+.repo-trio .muted-sep {
+  color: var(--fg-muted);
+  font-size: 0.85rem;
 }
 
 .feature-links {

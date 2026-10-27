@@ -125,42 +125,79 @@
           </div>
         </article>
 
-        <article class="feature">
-          <div class="feature-body">
-            <p class="feature-kicker">Infrastructure monitor · Rust · MCP</p>
-            <h3>
-              <a href="https://github.com/DataKnifeAI/pulseblade" target="_blank" rel="noopener noreferrer">pulseblade</a>
-              <span class="status status-active">Active</span>
-            </h3>
-            <p>
-              Agent-first infrastructure monitor: hosts, containers, and clusters expose change
-              checkpoints and gated remediation through MCP, so agents ask what moved instead of
-              drowning in alert noise. Humans get the same state without an LLM: dashboard, API,
-              Prometheus, and <code>pulseblade ctl</code>.
-            </p>
-            <ul class="repo-trio">
-              <li>
+        <div class="feature-pair feature-pair-infra">
+          <article class="feature">
+            <div class="feature-body">
+              <p class="feature-kicker">Infrastructure monitor · Rust · MCP</p>
+              <h3>
                 <a href="https://github.com/DataKnifeAI/pulseblade" target="_blank" rel="noopener noreferrer">pulseblade</a>
                 <span class="status status-active">Active</span>
-                <p>Node collectors, hub fleet view, pilot loop, MCP over stdio and HTTP.</p>
-              </li>
-              <li>
-                <a href="https://github.com/DataKnifeAI/agent-hub" target="_blank" rel="noopener noreferrer">agent-hub</a>
-                <span class="status status-live">Live</span>
-                <p>Front door to install skills, plugins, and editor extensions.</p>
-              </li>
-              <li>
-                <a href="https://github.com/DataKnifeAI/proxmox-ve-mcp" target="_blank" rel="noopener noreferrer">proxmox-ve-mcp</a>
-                <p>MCP surface for Proxmox VE: pair agents with real infrastructure.</p>
-              </li>
-            </ul>
-            <p class="feature-links">
-              <a href="https://github.com/DataKnifeAI/pulseblade" target="_blank" rel="noopener noreferrer">Source</a>
-              <a href="https://gitlab.com/dk-raas/dkai/pulseblade" target="_blank" rel="noopener noreferrer">GitLab mirror</a>
-              <a href="https://dataknifeai.github.io/agent-hub/" target="_blank" rel="noopener noreferrer">agent-hub site</a>
-            </p>
-          </div>
-        </article>
+              </h3>
+              <p>
+                Open observability with human gates: node collectors, a hub fleet view, a Postgres
+                change journal, and MCP so agents ask what moved instead of drowning in alert noise.
+                Humans get the same state without an LLM (dashboard, API, Prometheus,
+                <code>pulseblade ctl</code>). Not a product pitch; self-hosted tooling you run.
+              </p>
+              <ul class="repo-trio">
+                <li>
+                  <a href="https://github.com/DataKnifeAI/pulseblade" target="_blank" rel="noopener noreferrer">pulseblade</a>
+                  <span class="status status-active">Active</span>
+                  <p>Collectors, hub, journal, gated remediation. Apache-2.0.</p>
+                </li>
+                <li>
+                  <a href="https://github.com/DataKnifeAI/proxmox-ve-mcp" target="_blank" rel="noopener noreferrer">proxmox-ve-mcp</a>
+                  <p>MCP surface for Proxmox VE alongside host and cluster collectors.</p>
+                </li>
+                <li>
+                  <span class="repo-muted">Storage note</span>
+                  <p>
+                    Platform work also includes TrueNAS CSI upstream engagement; forks are not the
+                    hero here.
+                  </p>
+                </li>
+              </ul>
+              <p class="feature-links">
+                <a href="https://github.com/DataKnifeAI/pulseblade" target="_blank" rel="noopener noreferrer">Source</a>
+                <a href="https://gitlab.com/dk-raas/dkai/pulseblade" target="_blank" rel="noopener noreferrer">GitLab mirror</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature-body">
+              <p class="feature-kicker">Model serving · GPU · Kubernetes</p>
+              <h3>Local and API LLMs on real hardware</h3>
+              <p>
+                Self-hosted inference on machines you own: vLLM for Hermes Agent on a local GPU,
+                plus Kubernetes-ready GPU workloads when the cluster is the right shape. Cloud APIs
+                stay available when reach matters more than locality.
+              </p>
+              <ul class="repo-trio">
+                <li>
+                  <a href="https://github.com/DataKnifeAI/enodios" target="_blank" rel="noopener noreferrer">enodios</a>
+                  <span class="status status-active">Active</span>
+                  <p>One-script Linux setup for Hermes Agent + vLLM self-hosting.</p>
+                </li>
+                <li>
+                  <a href="https://github.com/DataKnifeAI/freya" target="_blank" rel="noopener noreferrer">freya</a>
+                  <p>GPU ComfyUI, SwarmUI, and Ollama on Docker/Kubernetes.</p>
+                </li>
+                <li>
+                  <a href="https://github.com/DataKnifeAI/agent-skills" target="_blank" rel="noopener noreferrer">agent-skills</a>
+                  <span class="muted-sep">·</span>
+                  <a href="https://github.com/DataKnifeAI/agent-workspace" target="_blank" rel="noopener noreferrer">agent-workspace</a>
+                  <p>Shared skills and Cursor Cloud Agent workspace pools.</p>
+                </li>
+              </ul>
+              <p class="feature-links">
+                <a href="https://dataknifeai.github.io/enodios/" target="_blank" rel="noopener noreferrer">enodios docs</a>
+                <a href="https://github.com/DataKnifeAI/enodios" target="_blank" rel="noopener noreferrer">enodios</a>
+                <a href="https://github.com/DataKnifeAI/freya" target="_blank" rel="noopener noreferrer">freya</a>
+              </p>
+            </div>
+          </article>
+        </div>
 
         <div class="feature-pair">
           <article class="feature">
