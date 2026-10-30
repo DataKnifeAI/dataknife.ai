@@ -508,8 +508,26 @@ h1 {
 .feature + .feature-pair,
 .feature-lead + .feature,
 .feature-lead + .feature-pair,
+.feature-pair + .feature,
 .feature-pair + .feature-pair {
   margin-top: 16px;
+}
+
+.feature-media-stack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto 1fr;
+  gap: 2px;
+}
+
+.feature-media.feature-media-stack img {
+  aspect-ratio: 16 / 9;
+  object-position: center;
+}
+
+.feature-media.feature-media-stack img:first-child {
+  grid-column: 1 / -1;
+  height: auto;
 }
 
 .feature-pair {

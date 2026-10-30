@@ -54,6 +54,7 @@ CATEGORIES = {
     "windrose-operator": "Apps",
     "palworld-operator": "Apps",
     "timesplice": "Apps",
+    "dont-ship": "Apps",
 }
 
 CATEGORY_ORDER = ["Agents", "MCP", "Platform", "Apps"]
@@ -65,10 +66,12 @@ STATUS = {
     "agent-hub": "Live",
     "palworld-operator": "Beta",
     "high-command-ui": "Live",
+    "dont-ship": "Live",
 }
 
 LIVE = {
     "high-command-ui": "https://hc.dataknife.ai/",
+    "dont-ship": "https://ds.dataknife.ai/",
     "agent-hub": "https://dataknifeai.github.io/agent-hub/",
 }
 

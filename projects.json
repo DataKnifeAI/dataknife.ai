@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27",
+  "generated": "2026-10-30",
   "categories": [
     "Agents",
     "MCP",
@@ -7,6 +7,44 @@
     "Apps"
   ],
   "projects": [
+    {
+      "name": "dont-ship",
+      "description": "D.O.N.T. Ship: Definitely Not On Time. Delivering Outcomes, Not Timelines.",
+      "language": "JavaScript",
+      "topics": [
+        "browser-game",
+        "game",
+        "isometric",
+        "threejs"
+      ],
+      "category": "Apps",
+      "status": "Live",
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/dont-ship",
+      "gitlab": null,
+      "homepage": "https://ds.dataknife.ai/",
+      "updated": "2026-10-30"
+    },
+    {
+      "name": "gitops-dev",
+      "description": "Development tools deployed to prd-apps Kubernetes cluster via GitOps",
+      "language": "",
+      "topics": [
+        "coder",
+        "fleet",
+        "gitops",
+        "helm",
+        "infrastructure",
+        "kubernetes"
+      ],
+      "category": "Platform",
+      "status": null,
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/gitops-dev",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-10-28"
+    },
     {
       "name": "pulseblade",
       "description": "Pulseblade: agent-first infrastructure monitor. MCP-native telemetry, change checkpoints, and gated remediation for hosts, containers, and clusters.",
@@ -26,7 +64,20 @@
       "github": "https://github.com/DataKnifeAI/pulseblade",
       "gitlab": "https://gitlab.com/dk-raas/dkai/pulseblade",
       "homepage": null,
-      "updated": "2026-10-27"
+      "updated": "2026-10-28"
+    },
+    {
+      "name": "stoat-operator",
+      "description": "Kubernetes operator for Stoat self-hosted chat instances (umbrella CR for the stoatchat/self-hosted stack)",
+      "language": "Go",
+      "topics": [],
+      "category": "Apps",
+      "status": null,
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/stoat-operator",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-10-28"
     },
     {
       "name": "high-command-ui",
@@ -46,7 +97,7 @@
       "github": "https://github.com/DataKnifeAI/high-command-ui",
       "gitlab": "https://gitlab.com/dk-raas/dkai/high-command/high-command-ui",
       "homepage": "https://hc.dataknife.ai/",
-      "updated": "2026-10-25"
+      "updated": "2026-10-27"
     },
     {
       "name": "emberrom",
@@ -131,26 +182,6 @@
       "stars": 0,
       "github": "https://github.com/DataKnifeAI/gitops-mcp",
       "gitlab": "https://gitlab.com/dk-raas/dkai/devops/gitops-mcp",
-      "homepage": null,
-      "updated": "2026-10-06"
-    },
-    {
-      "name": "gitops-dev",
-      "description": "Development tools deployed to prd-apps Kubernetes cluster via GitOps",
-      "language": "",
-      "topics": [
-        "coder",
-        "fleet",
-        "gitops",
-        "helm",
-        "infrastructure",
-        "kubernetes"
-      ],
-      "category": "Platform",
-      "status": null,
-      "stars": 0,
-      "github": "https://github.com/DataKnifeAI/gitops-dev",
-      "gitlab": null,
       "homepage": null,
       "updated": "2026-10-06"
     },
