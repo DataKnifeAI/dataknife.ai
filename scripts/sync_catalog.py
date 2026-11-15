@@ -25,10 +25,11 @@ GITLAB_GROUP = "dk-raas/dkai"
 SKIP_NAMES = {".github", "gitlab-profile", "dataknife.ai"}
 
 CATEGORIES = {
-    "nauarchos": "Agents",
+    "helmrail": "Agents",
     "slashbay": "Agents",
-    "enodios": "Agents",
-    "dioptra": "Agents",
+    "coldberth": "Agents",
+    "fleetshade": "Agents",
+    "dockfire": "Platform",
     "agent-skills": "Agents",
     "agent-workspace": "Agents",
     "agent-hub": "Agents",
@@ -60,8 +61,10 @@ CATEGORIES = {
 CATEGORY_ORDER = ["Agents", "MCP", "Platform", "Apps"]
 
 STATUS = {
-    "nauarchos": "Design",
+    "helmrail": "Design",
     "slashbay": "Active",
+    "dockfire": "Active",
+    "coldberth": "Active",
     "pulseblade": "Active",
     "agent-hub": "Live",
     "palworld-operator": "Beta",
@@ -73,6 +76,7 @@ LIVE = {
     "high-command-ui": "https://hc.dataknife.ai/",
     "dont-ship": "https://ds.dataknife.ai/",
     "agent-hub": "https://dataknifeai.github.io/agent-hub/",
+    "coldberth": "https://dataknifeai.github.io/coldberth/",
 }
 
 

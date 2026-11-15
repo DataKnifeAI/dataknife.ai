@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30",
+  "generated": "2026-11-15",
   "categories": [
     "Agents",
     "MCP",
@@ -7,6 +7,24 @@
     "Apps"
   ],
   "projects": [
+    {
+      "name": "dockfire",
+      "description": "Dockfire: homelab health overview with deep links into admin pages",
+      "language": "",
+      "topics": [
+        "dashboard",
+        "homelab",
+        "observability",
+        "self-hosted"
+      ],
+      "category": "Platform",
+      "status": "Active",
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/dockfire",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-11-15"
+    },
     {
       "name": "dont-ship",
       "description": "D.O.N.T. Ship: Definitely Not On Time. Delivering Outcomes, Not Timelines.",
@@ -453,8 +471,8 @@
       "updated": "2026-08-02"
     },
     {
-      "name": "nauarchos",
-      "description": "Nauarchos (ναύαρχος): Rust Kubernetes control plane for agent fleets (classes, sandboxes, dependencies, on-demand workers)",
+      "name": "helmrail",
+      "description": "Helmrail: Rust Kubernetes control plane for agent fleets (classes, sandboxes, dependencies, on-demand workers)",
       "language": "Rust",
       "topics": [
         "agents",
@@ -469,10 +487,10 @@
       "category": "Agents",
       "status": "Design",
       "stars": 1,
-      "github": "https://github.com/DataKnifeAI/nauarchos",
+      "github": "https://github.com/DataKnifeAI/helmrail",
       "gitlab": null,
       "homepage": null,
-      "updated": "2026-08-02"
+      "updated": "2026-11-15"
     },
     {
       "name": "high-command-mcp",
@@ -534,8 +552,8 @@
       "updated": "2026-08-01"
     },
     {
-      "name": "enodios",
-      "description": "Enodios (Ἐνόδιος): one-script Linux setup for Hermes Agent + vLLM self-hosting",
+      "name": "coldberth",
+      "description": "Coldberth: one-script Linux setup for Hermes Agent + vLLM self-hosting",
       "language": "Shell",
       "topics": [
         "agents",
@@ -549,10 +567,10 @@
       "category": "Agents",
       "status": null,
       "stars": 0,
-      "github": "https://github.com/DataKnifeAI/enodios",
+      "github": "https://github.com/DataKnifeAI/coldberth",
       "gitlab": null,
-      "homepage": null,
-      "updated": "2026-08-01"
+      "homepage": "https://dataknifeai.github.io/coldberth/",
+      "updated": "2026-11-15"
     },
     {
       "name": "windrose-operator",
@@ -575,8 +593,8 @@
       "updated": "2026-08-01"
     },
     {
-      "name": "dioptra",
-      "description": "DIOPTRA: DataKnife agent fleet status board (k8s · Cursor/Hermes · GitHub/GitLab issue backlog)",
+      "name": "fleetshade",
+      "description": "Fleetshade: DataKnife agent fleet status board (k8s \u00b7 Cursor/Hermes \u00b7 GitHub/GitLab issue backlog)",
       "language": "HTML",
       "topics": [
         "agents",
@@ -590,10 +608,10 @@
       "category": "Agents",
       "status": null,
       "stars": 0,
-      "github": "https://github.com/DataKnifeAI/dioptra",
+      "github": "https://github.com/DataKnifeAI/fleetshade",
       "gitlab": null,
       "homepage": null,
-      "updated": "2026-08-01"
+      "updated": "2026-11-15"
     },
     {
       "name": "ck-scenarios",
