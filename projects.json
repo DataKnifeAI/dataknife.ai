@@ -21,8 +21,8 @@
       "status": "Active",
       "stars": 0,
       "github": "https://github.com/DataKnifeAI/dockfire",
-      "gitlab": null,
-      "homepage": null,
+      "gitlab": "https://gitlab.com/dk-raas/dkai/dockfire",
+      "homepage": "https://dockfire.dataknife.net/",
       "updated": "2026-11-15"
     },
     {
