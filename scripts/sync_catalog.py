@@ -54,6 +54,10 @@ CATEGORIES = {
     "freya": "Apps",
     "windrose-operator": "Apps",
     "palworld-operator": "Apps",
+    "stoat-operator": "Apps",
+    "bedrock-operator": "Apps",
+    "dragonwilds-operator": "Apps",
+    "tang": "Agents",
     "timesplice": "Apps",
     "dont-ship": "Apps",
 }
@@ -77,6 +81,7 @@ LIVE = {
     "dont-ship": "https://ds.dataknife.ai/",
     "agent-hub": "https://dataknifeai.github.io/agent-hub/",
     "coldberth": "https://dataknifeai.github.io/coldberth/",
+    "dockfire": "https://dockfire.dataknife.net/",
 }
 
 

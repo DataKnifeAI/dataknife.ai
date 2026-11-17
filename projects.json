@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15",
+  "generated": "2026-11-17",
   "categories": [
     "Agents",
     "MCP",
@@ -8,60 +8,140 @@
   ],
   "projects": [
     {
+      "name": "stoat-operator",
+      "description": "Kubernetes operator for Stoat self-hosted chat instances (umbrella CR for the stoatchat/self-hosted stack)",
+      "language": "Go",
+      "topics": [],
+      "category": "Apps",
+      "status": null,
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/stoat-operator",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-11-17"
+    },
+    {
       "name": "dockfire",
       "description": "Dockfire: homelab health overview with deep links into admin pages",
-      "language": "",
-      "topics": [
-        "dashboard",
-        "homelab",
-        "observability",
-        "self-hosted"
-      ],
+      "language": "JavaScript",
+      "topics": [],
       "category": "Platform",
       "status": "Active",
       "stars": 0,
       "github": "https://github.com/DataKnifeAI/dockfire",
       "gitlab": "https://gitlab.com/dk-raas/dkai/dockfire",
       "homepage": "https://dockfire.dataknife.net/",
+      "updated": "2026-11-17"
+    },
+    {
+      "name": "bedrock-operator",
+      "description": "Kubernetes operator for Minecraft Bedrock Dedicated Server",
+      "language": "Go",
+      "topics": [],
+      "category": "Apps",
+      "status": null,
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/bedrock-operator",
+      "gitlab": null,
+      "homepage": "https://dataknifeai.github.io/bedrock-operator/",
+      "updated": "2026-11-17"
+    },
+    {
+      "name": "dragonwilds-operator",
+      "description": "Kubernetes operator for RuneScape: Dragonwilds dedicated servers",
+      "language": "Go",
+      "topics": [],
+      "category": "Apps",
+      "status": null,
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/dragonwilds-operator",
+      "gitlab": null,
+      "homepage": "https://dataknifeai.github.io/dragonwilds-operator/",
+      "updated": "2026-11-16"
+    },
+    {
+      "name": "coldberth",
+      "description": "Coldberth: one-script Linux setup for Hermes Agent + vLLM self-hosting",
+      "language": "Shell",
+      "topics": [
+        "agents",
+        "ai",
+        "hermes",
+        "llm",
+        "local-llm",
+        "shell",
+        "vllm"
+      ],
+      "category": "Agents",
+      "status": "Active",
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/coldberth",
+      "gitlab": null,
+      "homepage": "https://dataknifeai.github.io/coldberth/",
       "updated": "2026-11-15"
     },
     {
-      "name": "dont-ship",
-      "description": "D.O.N.T. Ship: Definitely Not On Time. Delivering Outcomes, Not Timelines.",
-      "language": "JavaScript",
+      "name": "fleetshade",
+      "description": "Fleetshade: DataKnife agent fleet status board (k8s · Cursor/Hermes · GitHub/GitLab issue backlog)",
+      "language": "HTML",
       "topics": [
-        "browser-game",
-        "game",
-        "isometric",
-        "threejs"
+        "agents",
+        "ai",
+        "cursor",
+        "dashboard",
+        "hermes",
+        "kubernetes",
+        "monitoring"
       ],
-      "category": "Apps",
-      "status": "Live",
-      "stars": 0,
-      "github": "https://github.com/DataKnifeAI/dont-ship",
-      "gitlab": null,
-      "homepage": "https://ds.dataknife.ai/",
-      "updated": "2026-10-30"
-    },
-    {
-      "name": "gitops-dev",
-      "description": "Development tools deployed to prd-apps Kubernetes cluster via GitOps",
-      "language": "",
-      "topics": [
-        "coder",
-        "fleet",
-        "gitops",
-        "helm",
-        "infrastructure",
-        "kubernetes"
-      ],
-      "category": "Platform",
+      "category": "Agents",
       "status": null,
       "stars": 0,
-      "github": "https://github.com/DataKnifeAI/gitops-dev",
+      "github": "https://github.com/DataKnifeAI/fleetshade",
       "gitlab": null,
       "homepage": null,
-      "updated": "2026-10-28"
+      "updated": "2026-11-15"
+    },
+    {
+      "name": "helmrail",
+      "description": "Helmrail: Rust Kubernetes control plane for agent fleets (classes, sandboxes, dependencies, on-demand workers)",
+      "language": "Rust",
+      "topics": [
+        "agents",
+        "ai",
+        "control-plane",
+        "hermes",
+        "kubernetes",
+        "llm",
+        "operator",
+        "rust"
+      ],
+      "category": "Agents",
+      "status": "Design",
+      "stars": 1,
+      "github": "https://github.com/DataKnifeAI/helmrail",
+      "gitlab": null,
+      "homepage": null,
+      "updated": "2026-11-15"
+    },
+    {
+      "name": "slashbay",
+      "description": "Slashbay: issue webhook intake, cheap-LLM triage, Coder workspace berth, and coding-agent dispatch for the DataKnifeAI fleet.",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "automation",
+        "coder",
+        "control-plane",
+        "github",
+        "gitlab"
+      ],
+      "category": "Agents",
+      "status": "Active",
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/slashbay",
+      "gitlab": "https://gitlab.com/dk-raas/dkai/agents/slashbay",
+      "homepage": null,
+      "updated": "2026-11-15"
     },
     {
       "name": "pulseblade",
@@ -82,17 +162,62 @@
       "github": "https://github.com/DataKnifeAI/pulseblade",
       "gitlab": "https://gitlab.com/dk-raas/dkai/pulseblade",
       "homepage": null,
-      "updated": "2026-10-28"
+      "updated": "2026-11-15"
     },
     {
-      "name": "stoat-operator",
-      "description": "Kubernetes operator for Stoat self-hosted chat instances (umbrella CR for the stoatchat/self-hosted stack)",
-      "language": "Go",
-      "topics": [],
-      "category": "Apps",
+      "name": "tang",
+      "description": "Tang: the structural spine (verify-first agent foundations for the DataKnifeAI fleet)",
+      "language": "Shell",
+      "topics": [
+        "agents",
+        "cursor",
+        "developer-tools",
+        "lint",
+        "slashbay",
+        "verification"
+      ],
+      "category": "Agents",
       "status": null,
       "stars": 0,
-      "github": "https://github.com/DataKnifeAI/stoat-operator",
+      "github": "https://github.com/DataKnifeAI/tang",
+      "gitlab": null,
+      "homepage": "https://github.com/DataKnifeAI/tang",
+      "updated": "2026-11-15"
+    },
+    {
+      "name": "dont-ship",
+      "description": "D.O.N.T. Ship: Definitely Not On Time. Delivering Outcomes, Not Timelines.",
+      "language": "JavaScript",
+      "topics": [
+        "browser-game",
+        "game",
+        "isometric",
+        "threejs"
+      ],
+      "category": "Apps",
+      "status": "Live",
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/dont-ship",
+      "gitlab": null,
+      "homepage": "https://ds.dataknife.ai/",
+      "updated": "2026-10-31"
+    },
+    {
+      "name": "gitops-dev",
+      "description": "Development tools deployed to prd-apps Kubernetes cluster via GitOps",
+      "language": "",
+      "topics": [
+        "coder",
+        "fleet",
+        "gitops",
+        "helm",
+        "infrastructure",
+        "kubernetes"
+      ],
+      "category": "Platform",
+      "status": null,
+      "stars": 0,
+      "github": "https://github.com/DataKnifeAI/gitops-dev",
       "gitlab": null,
       "homepage": null,
       "updated": "2026-10-28"
@@ -308,26 +433,6 @@
       "updated": "2026-08-18"
     },
     {
-      "name": "slashbay",
-      "description": "Slashbay: issue webhook intake, cheap-LLM triage, Coder workspace berth, and coding-agent dispatch for the DataKnifeAI fleet.",
-      "language": "Python",
-      "topics": [
-        "agents",
-        "automation",
-        "coder",
-        "control-plane",
-        "github",
-        "gitlab"
-      ],
-      "category": "Agents",
-      "status": "Active",
-      "stars": 0,
-      "github": "https://github.com/DataKnifeAI/slashbay",
-      "gitlab": "https://gitlab.com/dk-raas/dkai/agents/slashbay",
-      "homepage": null,
-      "updated": "2026-08-18"
-    },
-    {
       "name": "high-command-api",
       "description": "Real-time Hell Divers 2 game data scraper API built with FastAPI. Provides war status, planet tracking, statistics, campaigns, and more with automatic background collection and interactive documentation.",
       "language": "Python",
@@ -471,28 +576,6 @@
       "updated": "2026-08-02"
     },
     {
-      "name": "helmrail",
-      "description": "Helmrail: Rust Kubernetes control plane for agent fleets (classes, sandboxes, dependencies, on-demand workers)",
-      "language": "Rust",
-      "topics": [
-        "agents",
-        "ai",
-        "control-plane",
-        "hermes",
-        "kubernetes",
-        "llm",
-        "operator",
-        "rust"
-      ],
-      "category": "Agents",
-      "status": "Design",
-      "stars": 1,
-      "github": "https://github.com/DataKnifeAI/helmrail",
-      "gitlab": null,
-      "homepage": null,
-      "updated": "2026-11-15"
-    },
-    {
       "name": "high-command-mcp",
       "description": "Python MCP Server for High-Command API integration - Real-time Helldivers 2 game data access",
       "language": "Python",
@@ -552,27 +635,6 @@
       "updated": "2026-08-01"
     },
     {
-      "name": "coldberth",
-      "description": "Coldberth: one-script Linux setup for Hermes Agent + vLLM self-hosting",
-      "language": "Shell",
-      "topics": [
-        "agents",
-        "ai",
-        "hermes",
-        "llm",
-        "local-llm",
-        "shell",
-        "vllm"
-      ],
-      "category": "Agents",
-      "status": null,
-      "stars": 0,
-      "github": "https://github.com/DataKnifeAI/coldberth",
-      "gitlab": null,
-      "homepage": "https://dataknifeai.github.io/coldberth/",
-      "updated": "2026-11-15"
-    },
-    {
       "name": "windrose-operator",
       "description": "Kubernetes operator for Windrose dedicated game servers using the official Linux Docker image (windroseserver/windroseserver)",
       "language": "Go",
@@ -591,27 +653,6 @@
       "gitlab": null,
       "homepage": null,
       "updated": "2026-08-01"
-    },
-    {
-      "name": "fleetshade",
-      "description": "Fleetshade: DataKnife agent fleet status board (k8s \u00b7 Cursor/Hermes \u00b7 GitHub/GitLab issue backlog)",
-      "language": "HTML",
-      "topics": [
-        "agents",
-        "ai",
-        "cursor",
-        "dashboard",
-        "hermes",
-        "kubernetes",
-        "monitoring"
-      ],
-      "category": "Agents",
-      "status": null,
-      "stars": 0,
-      "github": "https://github.com/DataKnifeAI/fleetshade",
-      "gitlab": null,
-      "homepage": null,
-      "updated": "2026-11-15"
     },
     {
       "name": "ck-scenarios",
@@ -641,7 +682,7 @@
       ],
       "category": "Apps",
       "status": null,
-      "stars": 1,
+      "stars": 0,
       "github": "https://github.com/DataKnifeAI/freya",
       "gitlab": "https://gitlab.com/dk-raas/dkai/tools/freya",
       "homepage": null,
