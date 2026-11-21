@@ -1,5 +1,8 @@
 # dataknife.ai
 
+![dataknife.ai — hexagonal mark casting an amber pulse across project nodes](docs/assets/dataknife.ai-hero.jpg)
+
+
 Portfolio site for [DataKnifeAI](https://github.com/DataKnifeAI), served at [dataknife.ai](https://dataknife.ai) from GitHub Pages.
 
 - `index.html`: mission, north star, featured work, build layers, recent activity, principles
